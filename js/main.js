@@ -1,7 +1,10 @@
 $(function () {
     $('.menu__burger').click((event) => {
-        $('.menu__burger').toggleClass('burger__active')
-
+        $('.menu__burger').toggleClass('burger__active'),
+            $('.menu').toggleClass('menu__active'),
+            $('.header__box-wrapp').toggleClass('header__box-wrapp__active'),
+            $('body').toggleClass('look'),
+            $('.header').toggleClass('header__active')
     });
 
     $('.services__slaider').slick({
@@ -25,19 +28,52 @@ $(function () {
     });
 
     $('.about__slaider').slick({
-
+        arrows: true,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/arrow-left.png" alt="prev"></button>',
         nextArrow: '<button class="slick-btn slick-next"><img src="images/arrow-right.png" alt="next"></button>',
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
+
     $('.help__slaider').slick({
         infinite: true,
         arrows: false,
         dots: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1110,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 753,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
 
     $('.pay__slaider-link').magnificPopup({
@@ -49,5 +85,28 @@ $(function () {
         type: 'inline',
         focus: '#name'
     });
+    $().resize(function () {
+
+
+    });
+
+
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 620) {
+            $('.pay__wrapp-slaider').slick({
+                infinite: true,
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+        } else {
+            $('.pay__wrapp-slaider').slick('unslick');
+        }
+    });
+
+
 
 });
