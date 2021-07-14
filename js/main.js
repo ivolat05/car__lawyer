@@ -32,5 +32,13 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1
     });
+    $('.help__slaider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
+
 
 });
