@@ -40,5 +40,14 @@ $(function () {
         slidesToScroll: 1
     });
 
+    $('.pay__slaider-link').magnificPopup({
+        type: 'inline',
+        focus: '#name'
+    });
+
+    $('.services__content-btn').magnificPopup({
+        type: 'inline',
+        focus: '#name'
+    });
 
 });
