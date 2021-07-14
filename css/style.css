@@ -184,6 +184,15 @@ ul {
     padding-bottom: 70px;
 }
 
+.slick-slide {
+    opacity: 0.2;
+    transition: .4s;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
 
 /*-----------menu__burger------------*/
 .menu__burger {
@@ -723,6 +732,7 @@ ul {
 
 .services {
     background: #fcfcfc;
+    overflow: hidden;
 
 }
 
@@ -739,10 +749,6 @@ ul {
     width: 847px;
     border: 2px solid #f2f2f2;
 }
-
-.services__box-img {}
-
-.services__box-img img {}
 
 .services__box-content {
     padding: 40px;
@@ -792,6 +798,10 @@ ul {
 /*-------------services slaider-------------*/
 .services__slaider .slick-dots {
     margin-top: 40px;
+}
+
+.services__slaider .slick-list {
+    overflow: visible;
 }
 
 .slick-dots {
@@ -1068,6 +1078,16 @@ ul {
 }
 
 /*--------------help--------------*/
+.help {
+    overflow: hidden;
+    position: relative;
+}
+
+.help .slick-list {
+    overflow: visible;
+}
+
+
 .help__box-img {
     background: url('../images/help__back.png');
     background-repeat: no-repeat;
@@ -1101,7 +1121,6 @@ ul {
 .help__slaider .slick-dots {
     margin: 40px auto 200px 33%;
 }
-
 
 /*-------------contacts--------------------*/
 .contacts {
