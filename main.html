@@ -126,7 +126,6 @@
                         <button class='main__form-btn'>Позвоните мне</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </main>
@@ -193,9 +192,6 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="services">
         <div class="conteiner">
             <div class="title services__title">
@@ -312,7 +308,6 @@
             </div>
         </div>
     </section>
-
     <section class="about">
         <div class="conteiner">
             <div class="title about__title-1">
@@ -322,14 +317,17 @@
             </div>
             <div class="about__wrapp">
                 <div class="about__wrapp-img">
-                    <img src="images/about__foto.png" alt="">
-                    <div class="about__wrapp-img-content">
-                        <h3>
-                            Александр Александрович
-                        </h3>
-                        <p>
-                            Юрист, специалист в области ..
-                        </p>
+                    <div class="about__wrapp-img-back"></div>
+                    <div class="about__img">
+                        <img src="images/about__foto.png" alt="">
+                        <div class="about__wrapp-img-content">
+                            <h3>
+                                Александр Александрович
+                            </h3>
+                            <p>
+                                Юрист, специалист в области ..
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="about__wrapp-conteiner">
@@ -359,7 +357,6 @@
                         <div class="about__slaider-box">
                             <img src="images/diplom.png" alt="">
                         </div>
-
                         <div class="about__slaider-box">
                             <img src="images/diplom__2.png" alt="">
                         </div>
@@ -367,17 +364,11 @@
                         <div class="about__slaider-box">
                             <img src="images/diplom__3.png" alt="">
                         </div>
-
-                        <div class="about__slaider-box">
-                            <img src="images/diplom__3.png" alt="">
-                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <section class="pay">
         <div class="conteiner">
             <div class="title pay__title">
@@ -554,12 +545,9 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-
     <section class="contacts">
         <div class="conteiner">
             <div class="title contacts__title">
@@ -582,16 +570,36 @@
                 </div>
                 <img class='icon-map' src="images/map__marker.png" alt="">
                 <div class="contacts__wrapp-map">
-
-                    <div id="map" style="max-width: 1140px; height: 600px; filter: rgb(29, 27, 27);"></div>
+                    <div id="map" class="smallMap" style="max-width: 1140px;  filter: rgb(29, 27, 27);">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="conteiner">
             <div class="footer__wrapper">
+                <div class="footer__box">
+                    <div class="footer__box-conteiner ">
+                        <a class="footer__conteiner-link footer-tell" href="tel:+71234567890">
+                            +7 (123) 456-78-90
+                        </a>
+                        <a class="footer__conteiner-link footer-form" href="#">
+                            Обратный звонок
+                        </a>
+                        <a class="footer__conteiner-link footer-mail" href="mailto:info@mail.info">
+                            info@mail.info
+                        </a>
+                    </div>
+                    <div class="footer__box-wrapp">
+                        <a class="footer__wrapp-link" href="#">
+                            <img src="images/telegram.png" alt="">
+                        </a>
+                        <a class="footer__wrapp-link" href="#">
+                            <img src="images/whatsapp.png" alt="">
+                        </a>
+                    </div>
+                </div>
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__list-inner">
@@ -631,32 +639,10 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="footer__box">
-                    <div class="footer__box-conteiner ">
-                        <a class="footer__conteiner-link footer-tell" href="tel:+71234567890">
-                            +7 (123) 456-78-90
-                        </a>
-                        <a class="footer__conteiner-link footer-form" href="#">
-                            Обратный звонок
-                        </a>
-                        <a class="footer__conteiner-link footer-mail" href="mailto:info@mail.info">
-                            info@mail.info
-                        </a>
-                    </div>
-                    <div class="footer__box-wrapp">
-                        <a class="footer__wrapp-link" href="#">
-                            <img src="images/telegram.png" alt="">
-                        </a>
-                        <a class="footer__wrapp-link" href="#">
-                            <img src="images/whatsapp.png" alt="">
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </footer>
-    -->
-
     <section class="windows">
         <div class="conteiner">
             <div id='windows__services' class="windows__services white-popup mfp-hide">
@@ -746,13 +732,11 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script>
         ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
@@ -792,18 +776,9 @@
             myMap.geoObjects
                 .add(myPlacemark)
                 .add(myPlacemarkWithContent);
-
-            var zoomControl = new ymaps.control.ZoomControl({
-                options: {
-                    size: "small"
-                }
-            });
-            myMap.controls.add(zoomControl);
-
         });
     </script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
