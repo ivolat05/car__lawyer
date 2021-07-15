@@ -85,16 +85,12 @@ $(function () {
         type: 'inline',
         focus: '#name'
     });
-    $().resize(function () {
-
-
-    });
 
 
 
     window.addEventListener("resize", function () {
         if (window.innerWidth <= 620) {
-            $('.pay__wrapp-slaider').slick({
+            $('.pay__wrapp-slaider').not('.slick-initialized').slick({
                 infinite: true,
                 dots: true,
                 arrows: false,
@@ -103,7 +99,7 @@ $(function () {
             });
 
         } else {
-            $('.pay__wrapp-slaider').slick('unslick');
+            $('.pay__wrapp-slaider').filter('.slick-initialized').slick('unslick');
         }
     });
 
