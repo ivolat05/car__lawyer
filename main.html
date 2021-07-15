@@ -503,7 +503,6 @@
                     С чем мы помогли
                 </h2>
             </div>
-
             <div class="help__slaider">
                 <div>
                     <div class="help__slaider-box">
@@ -639,7 +638,6 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
         </div>
     </footer>
@@ -749,7 +747,6 @@
                 MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
                     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
                 ),
-
                 myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
                     hintContent: '',
                     balloonContent: ''
@@ -759,10 +756,7 @@
                     iconImageSize: [50, 70],
                     iconImageOffset: [-15, -76]
                 }),
-
-                myPlacemarkWithContent = new ymaps.Placemark([55.76286004199862, 37.606497272758524], {
-
-                }, {
+                myPlacemarkWithContent = new ymaps.Placemark([55.76286004199862, 37.606497272758524], {}, {
                     iconLayout: 'default#imageWithContent',
                     iconImageHref: 'images/map__marker.png',
                     iconImageSize: [50, 70],

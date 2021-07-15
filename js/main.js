@@ -16,8 +16,8 @@ $(function () {
     });
 
 
-    var $status = $('.pagingInfo');
-    var $slickElement = $('.about__slaider');
+    let $status = $('.pagingInfo');
+    let $slickElement = $('.about__slaider');
 
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
@@ -48,7 +48,6 @@ $(function () {
                     slidesToScroll: 1
                 }
             }
-
         ]
     });
 
@@ -72,7 +71,6 @@ $(function () {
                     slidesToScroll: 1
                 }
             }
-
         ]
     });
 
@@ -97,7 +95,6 @@ $(function () {
                 slidesToShow: 1,
                 slidesToScroll: 1
             });
-
         } else {
             $('.pay__wrapp-slaider').filter('.slick-initialized').slick('unslick');
         }
