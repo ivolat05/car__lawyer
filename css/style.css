@@ -271,9 +271,6 @@ ul {
     cursor: pointer;
 
     display: none;
-
-
-
 }
 
 .menu__burger::before,
@@ -318,9 +315,10 @@ ul {
 
 .burger__active::before {
     transform: rotate(45deg);
-    top: 22px;
-    background-color: #CCA87E;
 
+    top: 22px;
+
+    background-color: #CCA87E;
 }
 
 .burger__active .menu__burger-line {
@@ -332,7 +330,6 @@ ul {
     transform: rotate(-45deg);
     bottom: 9px;
     background-color: #CCA87E;
-
 }
 
 /*-----------main-------------------*/
@@ -1333,6 +1330,7 @@ ul {
 
 /*----------------pay__title-------------*/
 .pay {
+    overflow: hidden;
     background: url('../images/pay__conteiner-background.png') no-repeat center right/cover;
     padding-bottom: 160px;
 }
