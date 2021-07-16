@@ -195,73 +195,31 @@ ul {
 }
 
 .slick-dots {
+
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    width: 122px;
-    position: relative;
-    right: -50%;
 }
 
 
 .slick-dots button {
-    width: 122px;
-    height: 8px;
+    margin-right: 5px;
+    border-radius: 50%;
     background: #F2F2F2;
     border: none;
     color: rgba(255, 255, 255, 0);
 }
 
 .slick-active button {
-    width: 122px;
-    height: 8px;
     background: #DEBA91;
 }
 
-/*-------------slick media----------------*/
-@media(max-width: 850px) {
-    .slick-dots {
-        right: -43%;
-    }
-}
 
-@media(max-width: 410px) {
-    .slick-dots {
-        right: -29%;
-    }
-}
-
-/*------------------help__slaider  slaider media----------------*/
-@media(max-width: 750px) {
+@media(max-width: 1110px) {
     .help__slaider .slick-dots {
-        right: -85%;
+        width: 100vw;
     }
 }
-
-@media(max-width: 550px) {
-    .help__slaider .slick-dots {
-        right: -60%;
-    }
-}
-
-@media(max-width: 424px) {
-    .help__slaider .slick-dots {
-        right: -30%;
-    }
-}
-
-
-/*-------------pay__wrapp-slaider slaider media----------*/
-@media (max-width: 650px) {
-    .pay__wrapp-slaider .slick-dots button {
-        width: 97px;
-    }
-
-    .pay__wrapp-slaider .slick-dots {
-        right: -33%;
-    }
-}
-
 
 /*-----------menu__burger------------*/
 .menu__burger {
@@ -941,15 +899,7 @@ ul {
     }
 }
 
-@media(max-width: 650px) {
-    .slick-dots button {
-        width: 50px;
-    }
 
-    .slick-active button {
-        width: 100px;
-    }
-}
 
 @media(max-width: 550px) {
     .services__box-content {
